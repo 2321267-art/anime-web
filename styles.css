@@ -1,10 +1,13 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #000; 
-  color: #fff; 
+  background: #000;
+  color: #fff;
 }
+
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -13,21 +16,23 @@ header {
   background: #4CAF50;
   color: white;
 }
+
 .logo-text {
   font-family: 'Impact', 'Arial Black', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff;      
+  color: #ffffff;
   letter-spacing: 2px;
-  text-shadow: 0 0 8px #00ffcc, 0 0 15px #4CAF50; 
+  text-shadow: 0 0 8px #00ffcc, 0 0 15px #4CAF50;
   cursor: pointer;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .logo-text:hover {
   transform: scale(1.2);
-  text-shadow: 0 0 12px #00ffaa, 0 0 25px #00ffcc; 
+  text-shadow: 0 0 12px #00ffaa, 0 0 25px #00ffcc;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -49,6 +54,8 @@ nav ul li a {
 nav ul li a:hover {
   background: #45a049;
 }
+
+/* Container */
 .container {
   display: block;
   padding: 2rem;
@@ -59,21 +66,23 @@ h1 {
   margin-bottom: 2rem;
   color: #fff;
 }
+
+/* Cards */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
-  align-items: start; 
+  align-items: start;
 }
 
 .anime-card {
-  background: #111; 
+  background: #111;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease, max-height 0.3s ease;
-  max-height: 380px; 
+  max-height: 380px;
   position: relative;
 }
 
@@ -86,8 +95,8 @@ h1 {
 
 .anime-card.expanded {
   max-height: 650px;
-  transform: scale(1.05); 
-  z-index: 10; 
+  transform: scale(1.05);
+  z-index: 10;
 }
 
 .anime-card.expanded .card-front img {
@@ -105,6 +114,7 @@ h1 {
   display: block;
 }
 
+/* Footer */
 footer {
   background: #111;
   text-align: center;
