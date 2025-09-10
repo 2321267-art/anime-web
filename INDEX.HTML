@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+   <div class="logo-text">AW</div>
+   <nav>
+      <ul>
+        <li><a href="#anime">Top Grossing Anime</a></li>
+      </ul>
+   </nav>
+ </header>
+
+  <section id="anime" class="container active">
+    <h1>Top Grossing Anime Series</h1>
+
+    <div class="card-grid">
+      <div class="anime-card" onclick="toggleCard(this)">
+        <div class="card-front">
+          <img src="https://images-cdn.ubuy.co.in/64633884e77252742d07e026-demon-slayer-anime-poster-canvas-wall.jpg" alt="Demon Slayer">
+        </div>
+        <div class="card-details">
+          <h2>Demon Slayer: Kimetsu no Yaiba</h2>
+          <p><strong>Release Date:</strong> April 2019</p>
+          <p><strong>Global Earnings:</strong> $500+ million</p>
+          <p><strong>Rating:</strong> 8.7/10 (IMDb)</p>
+          <p>Stunning animation and heartfelt story about a boy fighting demons to save his sister.</p>
+        </div>
+      </div>
+      
+      <div class="anime-card" onclick="toggleCard(this)">
+        <div class="card-front">
+          <img src="https://resizing.flixster.com/aDi4fDTWv9jxD3OqC2TqXKkUUYg=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v9_ah.jpg" alt="Attack on Titan">
+        </div>
+        <div class="card-details">
+          <h2>Attack on Titan</h2>
+          <p><strong>Release Date:</strong> April 2013</p>
+          <p><strong>Global Earnings:</strong> $300+ million</p>
+          <p><strong>Rating:</strong> 9.1/10 (IMDb)</p>
+          <p>A dystopian world where humanity fights for survival against giant humanoids.</p>
+        </div>
+      </div>
+
+      <div class="anime-card" onclick="toggleCard(this)">
+        <div class="card-front">
+          <img src="https://images-cdn.ubuy.co.in/633ff1157e3fbc25557517c8-one-piece-poster-japanese-anime-posters.jpg" alt="One Piece">
+        </div>
+        <div class="card-details">
+          <h2>One Piece</h2>
+          <p><strong>Release Date:</strong> October 1999</p>
+          <p><strong>Global Earnings:</strong> $20+ billion</p>
+          <p><strong>Rating:</strong> 8.9/10 (IMDb)</p>
+          <p>A long-running pirate adventure series full of humor, action, and heart.</p>
+        </div>
+      </div>
+
+      <div class="anime-card" onclick="toggleCard(this)">
+        <div class="card-front">
+          <img src="https://m.media-amazon.com/images/M/MV5BM2U1YzcyOGQtNjY5NC00ZWM0LTk0ZDItMTVhN2E2ODk3MWQ4XkEyXkFqcGc@._V1_.jpg" alt="Your Name">
+        </div>
+        <div class="card-details">
+          <h2>Your Name</h2>
+          <p><strong>Release Date:</strong> August 2016</p>
+          <p><strong>Global Earnings:</strong> $380+ million</p>
+          <p><strong>Rating:</strong> 8.4/10 (IMDb)</p>
+          <p>A time-travel love story that captivated audiences with its visuals and emotions.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AnimeWorld | Contact: animefan@example.com</p>
+    <p>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+       <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss"
+        alt="Valid CSS!" />
+     </a>
+    </p>
+  </footer>
+  <script>
+  function toggleCard(card) {
+    document.querySelectorAll(".anime-card.expanded").forEach(openCard => {
+      if (openCard !== card) {
+        openCard.classList.remove("expanded");
+      }
+    });
+    card.classList.toggle("expanded");
+  }
+  </script>
+</body>
+</html>
