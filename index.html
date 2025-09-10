@@ -32,7 +32,7 @@
           <p>Stunning animation and heartfelt story about a boy fighting demons to save his sister.</p>
         </div>
       </div>
-      
+
       <div class="anime-card" onclick="toggleCard(this)">
         <div class="card-front">
           <img src="https://resizing.flixster.com/aDi4fDTWv9jxD3OqC2TqXKkUUYg=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v9_ah.jpg" alt="Attack on Titan">
@@ -85,15 +85,16 @@
      </a>
     </p>
   </footer>
+
   <script>
-  function toggleCard(card) {
-    document.querySelectorAll(".anime-card.expanded").forEach(openCard => {
-      if (openCard !== card) {
-        openCard.classList.remove("expanded");
-      }
-    });
-    card.classList.toggle("expanded");
-  }
+    function toggleCard(card) {
+      document.querySelectorAll(".anime-card.expanded").forEach(openCard => {
+        if (openCard !== card) {
+          openCard.classList.remove("expanded");
+        }
+      });
+      card.classList.toggle("expanded");
+    }
   </script>
 </body>
 </html>
